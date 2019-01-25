@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const controller = require('./controller');
 const massive = require('massive');
 
-
 const app = express();
 app.use( bodyParser.json());
 app.get('/api/product',controller.getProduct)

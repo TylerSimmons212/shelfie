@@ -10,15 +10,11 @@ class Dashboard extends Component {
     }
 
   render() {
-      let myInventory = this.state.inventoryList.map(()=>{
-          return (
-              <Product />
-          )
-      })
+      
     return (
       <div className="App">
         Dashboard
-        {myInventory}
+        <Product displayProducts={this.props.displayProducts}/>
       </div>
     );
   }
